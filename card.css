@@ -1,0 +1,40 @@
+.card {
+    box-shadow: 0 0.0625em 0.25em 0.0625em gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.round {
+    overflow: hidden;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.title {
+    height: 75px;
+    border-bottom: 1px solid lightgray;
+}
+
+.actions {
+    border-top: 1px solid lightgray;
+    height: 100px;
+}
+
+.test-container .card.medium {
+    position: relative;
+    left: 25%;
+}
+
+.small {
+    height: 300px;
+    width: 175px;
+}
+
+.medium {
+    height: 400px;
+    width: 350px;
+}
