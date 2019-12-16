@@ -14,10 +14,7 @@
 
 .menu-title {
     height: 45px;
-    text-align: center;
-    line-height: 3em;
     color: white;
-    font-weight: bold;
 }
 
 .menu-content, .menu-content ul {
