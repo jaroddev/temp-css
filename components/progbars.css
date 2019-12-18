@@ -1,0 +1,98 @@
+
+/**/
+
+#progbar {
+    display : flex;
+    justify-content : space-around;
+    
+    /box-shadow : inset 0 0 0.5em black;
+    
+    margin : 2em auto;
+    
+    border-style : solid;
+    border-radius : 0.5em;
+    width : 768px;
+    height : 64px;
+    overflow : hidden;
+    
+    /border-color : dodgerBlue;
+    /background-color : darkBlue;
+    color : white;
+    
+    user-select : none;
+}
+
+.progBar {
+    transition : 0.2s;
+    
+    display : flex;
+    
+    position: relative;
+    /z-index: -1;
+    
+    box-sizing : border-box;
+    
+    /background-color: darkBlue;
+}
+
+.progBar > * {
+    width : 100%;
+    
+    text-align : center;
+}
+
+.progBar > * > * {
+    position: relative;
+    z-index: +1;
+    
+    width : 75%;
+}
+
+.progArrow {
+    transition : 0.2s;
+    
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    
+    position : relative;
+    
+    margin : 0 16px;
+    height : 100%;
+}
+
+.progArrow:before, .progArrow:after {
+    transition : 0.2s;
+    
+    position : absolute;
+    left : 0;
+    /z-index : -1;
+    
+    width : 100%;
+    height : 50.25%;
+    background-color : #03758D;
+    content: "";
+}
+
+.progArrow:before {
+    top : 0;
+    transform : skew(+45deg);
+}
+
+.progArrow:after {
+    bottom : 0;
+    transform : skew(-45deg);
+}
+
+.progArrow.select {
+    transition : 0.1s;
+    
+    font-size : 1.125em;
+}
+
+.progArrow.select:before, .progArrow.select:after {
+    width : 100%;
+    
+    background-color : dodgerBlue;
+    background-color : #43B5CD;
+}
