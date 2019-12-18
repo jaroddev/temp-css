@@ -1,0 +1,86 @@
+
+/* Type input elements */
+
+input:not([type]),
+input[type="text"],
+input[type="password"] {
+    transition : 0.375s;
+    
+    border-width : 0.0625em;
+    border-style : solid;
+    border-radius : 0.25em;
+    
+    border-color : lightGray;
+    background-color : #FFFFFF;
+    color : gray;
+}
+
+input:not([type]):hover,
+input[type="text"]:hover,
+input[type="password"]:hover {
+    transition : 0.2s;
+    
+    border-color : gray;
+    color : dimGray;
+}
+
+input:not([type]):focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    transition : 0.1s;
+    
+    outline-color : cyan;
+    outline : none;
+    
+    border-color : cyan;
+    color : black;
+}
+
+/* Buttons */
+
+button,
+input[type="button"],
+input[type="submit"],
+.button {
+    transition : 0.25s;
+    
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    
+    cursor : pointer;
+    user-select : none;
+    
+    box-sizing : border-box;
+    
+    border-style : solid;
+    border-width : 0.0625em;
+    border-radius : 0.25em;
+    padding : 1px 6px;
+    
+    border-color : dodgerBlue;
+    background-color : white;
+    color : dodgerBlue;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.button:hover {
+    border-color : #3EB0FF;
+    background-color : white;
+    color : #3EB0FF;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+.button:active {
+    transition : 0.125s;
+    
+    border-color : dodgerBlue;
+    background-color : dodgerBlue;
+    color : white;
+}
+
+/**/
