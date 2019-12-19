@@ -1,0 +1,49 @@
+
+.criterion {
+    display : flex;
+    
+    justify-content : flex-end;
+    
+    position : relative;
+    
+    margin : 1em 0 2em 0;
+    
+    width : 100%;
+}
+
+.criterion > label {
+    display : flex;
+    align-items : center;
+    justify-content : flex-start;
+    
+    position : absolute;
+    top : -0.625em;
+    left : 1em;
+    
+    padding : 0 0.25em 0.125em 0.25em;
+    border-radius : 0 0 0.375em 0.375em;
+    
+    background-color : white;
+    
+    text-overflow : ellipsis;
+    max-height : 1em;
+    
+    user-select : none;
+}
+
+.criterion > input {
+    padding : 0.5em;
+    width : 100%;
+    
+    font-size : 1.25em;
+}
+
+.criterion > input[required] + label:after {
+    padding-left: 0.375em;
+    color: red;
+    content: "*";
+}
+
+.criterion > input.notice {
+    border-color: red;
+}

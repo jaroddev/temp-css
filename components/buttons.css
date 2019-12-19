@@ -1,0 +1,87 @@
+
+button,
+input[type="button"],
+input[type="submit"],
+.button {
+    transition: 0.25s;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    user-select: none;
+    
+    box-sizing: border-box;
+    
+    outline: none;
+    
+    border-style: solid;
+    border-width: 0.0625em;
+    border-radius: 0.25em;
+    padding: 1px 6px;
+    
+    border-color: #43B5CD;
+    background-color: white;
+    color: #43B5CD;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+.button:hover {
+    /border-color: #3EB0FF;
+    /background-color: white;
+    /color: #3EB0FF;
+    filter: brightness(115%);
+}
+
+button:focus:not(:active),
+input[type="button"]:focus:not(:active),
+input[type="submit"]:focus:not(:active),
+.button:focus:not(:active) {
+    transition: 0s;
+    box-shadow: 0 0 0 0.0625em;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+.button:active {
+    transition: 0.125s;
+    
+    border-color: #43B5CD;
+    background-color: #43B5CD;
+    color: white;
+}
+
+.blue {
+    border-color: #43B5CD;
+    background: white;
+    color: #43B5CD;
+} .orange {
+    border-color: #FFBD59;
+    background: white;
+    color: #FFBD59;
+} .black {
+    border-color: #505050;
+    background: white;
+    color: #505050;
+}
+
+.full.blue {
+    background: #43B5CD;
+    color: white;
+} .full.orange {
+    background: #FFBD59;
+    color: white;
+} .full.black {
+    background: #505050;
+    color: white;
+}
+
+.big {
+    border-radius : 56px;
+    width : 192px; height : 171px;
+}
