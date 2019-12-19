@@ -1,0 +1,90 @@
+* {
+    font-family: Roboto;
+}
+
+/* normalize */
+
+html, body, ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* basic common header and footer rules */
+
+.upper-header, nav ul, .lower-footer {
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: column;
+    height: 16.5%;
+}
+
+.upper-header, .upper-footer, .lower-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* header and inner header layout */
+
+.upper-header {
+    color: white;
+    justify-content: space-between;
+}
+
+nav ul {
+    justify-content: space-around;
+}
+
+/* main content */
+
+main {
+    min-height: 67%;
+    background-color: red;
+}
+
+/* footer and footer inner layout */
+
+.upper-footer ul {
+    justify-content: space-between;
+}
+
+.upper-footer ul {
+    display: flex;
+    height: 50%;
+}
+
+.upper-footer ul li {
+    border: 1px solid black;
+}
+
+.lower-footer, .social {
+    justify-content: space-between;
+}
+
+.social {
+    width: 25%;
+    display: flex;
+}
+
+/* colors */
+
+.upper-header, .blue {
+    background-color: #43b5cd;
+}
+
+nav, .lower-footer, .gray {
+    background-color: #d9d9d9;
+}
