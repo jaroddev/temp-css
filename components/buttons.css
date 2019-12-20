@@ -5,7 +5,7 @@ input[type="submit"],
 .button {
     transition: 0.25s;
     
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -19,18 +19,20 @@ input[type="submit"],
     
     border-style: solid;
     border-width: 0.0625em;
-    border-radius: 0.25em;
+    border-radius: 4px;
     padding: 1px 6px;
     
-    border-color: #43B5CD;
-    background-color: white;
-    color: #43B5CD;
+    /border-color: #43B5CD;
+    /background-color: white;
+    /color: #43B5CD;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 .button:hover {
+    transition: 0.125s;
+    
     /border-color: #3EB0FF;
     /background-color: white;
     /color: #3EB0FF;
@@ -51,9 +53,9 @@ input[type="submit"]:active,
 .button:active {
     transition: 0.125s;
     
-    border-color: #43B5CD;
-    background-color: #43B5CD;
-    color: white;
+    /border-color: #43B5CD;
+    /background-color: #43B5CD;
+    /color: white;
 }
 
 .blue {
@@ -70,6 +72,20 @@ input[type="submit"]:active,
     color: #505050;
 }
 
+.blue:active {
+    border-color: #43B5CD;
+    background-color: #43B5CD;
+    color: white;
+} .orange:active {
+    border-color: #FFBD59;
+    background-color: #FFBD59;
+    color: white;
+} .black:active {
+    border-color: #505050;
+    background-color: #505050;
+    color: white;
+}
+
 .full.blue {
     background: #43B5CD;
     color: white;
@@ -78,6 +94,22 @@ input[type="submit"]:active,
     color: white;
 } .full.black {
     background: #505050;
+    color: white;
+}
+
+.hover-full:hover {
+    transition: 0.125s;
+} .hover-full.blue:hover {
+    border-color: #43B5CD;
+    background-color: #43B5CD;
+    color: white;
+} .hover-full.orange:hover {
+    border-color: #FFBD59;
+    background-color: #FFBD59;
+    color: white;
+} .hover-full.black:hover {
+    border-color: #505050;
+    background-color: #505050;
     color: white;
 }
 
