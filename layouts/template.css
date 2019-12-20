@@ -21,6 +21,14 @@
 
 /* normalize */
 
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
 html, body, ul, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
@@ -78,8 +86,8 @@ nav ul {
 /* main content */
 
 main {
-    min-height: 67%;
-    background-color: red;
+    /min-height: 67%;
+    /background-color: red;
 }
 
 /* footer and footer inner layout */
@@ -129,5 +137,100 @@ nav, .lower-footer, .gray {
 
 .logo {
     font-family: GoodDog;
-    font-size: 2em;
+    font-size: 48px;
+}
+
+.upper-header > *, .lower-footer > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100%;
+}
+
+.upper-header > *, .lower-footer > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+header > nav {
+    font-size: 20px;
+}
+
+header > nav > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+a.icon {
+    height: 100%;
+}
+
+a.icon > img {
+    box-sizing: border-box;
+    
+    padding: 4px;
+    height: 100%;
+}
+
+/**/
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    height: 96px;
+}
+
+.upper-header {
+    flex-grow: 1;
+}
+
+header > nav {
+    height: 48px;
+}
+
+footer {
+    height: 112px;
+}
+
+.upper-footer {
+    height: 48px;
+}
+
+.lower-footer {
+    flex-grow: 1;
+}
+
+.social {
+    justify-content: space-between;
+}
+
+.page-title {
+    margin: 16px 33.33% 32px 33.33%;
+    
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    
+    border-color: black;
+    
+    padding-bottom: 16px;
+    
+    text-align: center;
+}
+
+.page-inner {
+    margin: 32px 0 64px 0;
 }
