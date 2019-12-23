@@ -1,0 +1,52 @@
+
+.line3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    margin: 0 8.33%;
+}
+
+.big-title {
+    margin-bottom: 32px;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    padding-bottom: 16px;
+    
+    text-align: center;
+    
+    border-color: gray;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow : 0 1px 4px 1px gray;
+    
+    padding: 32px;
+    
+    width: 384px;
+    min-height: 240px;
+}
+
+.buttonDiv3 {
+    flex-grow: 1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button3,
+input[type="button"].button3,
+input[type="submit"].button3 {
+    border: none;
+    border-radius: 0;
+    padding: 8px 0;
+    width: 100%;
+    
+    background-color: black;
+    color: white;
+}
