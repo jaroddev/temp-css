@@ -1,0 +1,22 @@
+
+.top {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    
+    height : 50%;
+}
+
+.description {
+    display : flex;
+    align-items : start;
+    justify-content : center;
+    
+    height : 50%;
+    
+    text-align : center;
+}
+
+img {
+    height : 100%;
+}
