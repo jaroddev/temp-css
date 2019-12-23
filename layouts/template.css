@@ -184,10 +184,12 @@ a.icon > img {
 body {
     display: flex;
     flex-direction: column;
+    /overflow: auto;
 }
 
 main {
     flex-grow: 1;
+    /min-height: calc(100% - 96px - 112px);
 }
 
 header {
