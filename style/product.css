@@ -1,0 +1,56 @@
+/* CSS page for products design */
+
+/* Color for test */
+
+.blue {
+    background-color: #43b5cd;
+}
+
+.black {
+    background: black;
+}
+
+/* Menu cards */
+
+.menu-title {
+    height: 45px;
+    color: white;
+}
+
+.menu-content, .menu-content ul {
+    display: flex;
+}
+
+.menu-content ul {
+    flex-direction: column;
+}
+
+.menu-content ul, .menu-content ul li {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 3em;
+}
+
+.menu-content li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-content li {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.menu-content li:hover {
+    background-color: lightgray;
+}
+
+/* Products (clothes) card */
+
+.clothe-actions {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    \align-content: center;
+}
