@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+
+{% block style %}
+<link rel="stylesheet" href="../layouts/template.css">
+<link rel="stylesheet" href="../components/criterions.css">
+<link rel="stylesheet" href="../components/buttons.css">
+<link rel="stylesheet" href="../style/connexion.css">
+{% endblock style %}
+
+{% block title %}
+    Connectez-vous
+{% endblock title %}
+
+{% block content %}
+<div class="page-inner">
+    <h3 class="page-title">Connexion</h3>
+    
+    <div class="line3">
+        <form>
+            <div class="card3">
+                <h1 class="big-title">CONNECTEZ-VOUS</h1>
+                
+                <div class="criterion" title="Champ indispensable">
+                    <input required name="email">
+                    <label>Adresse mail</label>
+                </div>
+                <div class="criterion" title="Champ indispensable">
+                    <input type="password" required name="mot-de-passe">
+                    <label>Mot de passe</label>
+                </div>
+                
+                <div class="buttonDiv3">
+                    <input type="submit" class="button3" value="SE CONNECTER">
+                </div>
+            </div>
+        </form>
+
+        <div class="card3">
+            <h1 class="big-title">NOUVEAU CLIENT ?</h1>
+            
+            <div class="buttonDiv3">
+                <button class="button3">CRÉER VOTRE COMPTE</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
