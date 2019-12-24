@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+
+{% block style %}
+<link rel="stylesheet" href="../layouts/template.css">
+<link rel="stylesheet" href="../components/buttons.css">
+<link rel="stylesheet" href="../style/compte.css">
+{% endblock style %}
+
+{% block content %}
+<div class="page-inner">
+    <h3 class="page-title">Mon compte</h3>
+    <p style='text-align: center; margin-bottom: 12px;'>Bienvenue sur la page d'accueil de votre compte personnel.</p>
+    <p style='text-align: center; margin-top: 12px;'>Vous pouvez y gérer vos informations personnelles ainsi que vos
+        commandes.</p>
+
+    <div style='display : flex; justify-content : space-around; margin: 64px 8.33% 0 8.33%;'>
+        <div class="button big full black">
+            <div class="top">
+                <img src="../images/list.png"></img>
+            </div>
+            <div class="description">
+                HISTORIQUE ET DETAILS DE MES COMMANDES
+            </div>
+        </div>
+
+        <div class="button big full black">
+            <div class="top">
+                <img src="../images/arrows.png"></img>
+            </div>
+            <div class="description">
+                MES RETOURS de MARCHANDISE
+            </div>
+        </div>
+
+        <div class="button big full black">
+            <div class="top">
+                <img src="../images/user.png"></img>
+            </div>
+            <div class="description">
+                MES INFORMATIONS PERSONNELLES
+            </div>
+        </div>
+
+        <div class="button big full black">
+            <div class="top">
+                <img src="../images/house.png"></img>
+            </div>
+            <div class="description">
+                MES ADRESSES
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+
+{% block script %}
+
+{% endblock script %}
