@@ -1,0 +1,194 @@
+{% extends 'base.html.twig' %}
+
+{% block style %}
+<link rel="stylesheet" href="../layouts/template.css">
+<link rel="stylesheet" href="../components/buttons.css">
+<link rel="stylesheet" href="../style/connexion.css">
+<link rel="stylesheet" href="../style/voir-produit.css">
+{% endblock style %}
+
+{% block title %}
+Titre du produit haha hihi
+{% endblock title %}
+
+{% block content %}
+<div class="page-inner">
+    <h3 class="page-title">Page produit</h3>
+
+    <form>
+        <div class="product-container">
+            <div class="product-picture">
+                <img class="product"
+                    src="https://www.myshirt.com.my/wp-content/uploads/2016/01/76000-Gildan-Premium-Soft-Ring-Spun-T-Shirt-Dark-Chocolate.jpg">
+            </div>
+            <div class="product-desc">
+                <h1 class="desc-head">Nom du produit</h1>
+
+                <div class="desc-main">
+                    <h3 class="subtitle">Taille</h3>
+
+                    <div class="radio-div">
+                        <input type="radio" id="taille-XS" name="taille" value="XS">
+                        <label class="button blue" for="taille-XS">XS</label>
+
+                        <input type="radio" id="taille-S" name="taille" value="S">
+                        <label class="button blue" for="taille-S">S</label>
+
+                        <input type="radio" id="taille-M" name="taille" value="M" checked>
+                        <label class="button blue" for="taille-M">M</label>
+
+                        <input type="radio" id="taille-L" name="taille" value="L">
+                        <label class="button blue" for="taille-L">L</label>
+
+                        <input type="radio" id="taille-XL" name="taille" value="XL">
+                        <label class="button blue" for="taille-XL">XL</label>
+
+                    </div>
+
+                    <h3 class="subtitle">Couleur</h3>
+
+                    <div class="radio-div">
+                        <input type="radio" id="couleur-blanc" name="couleur" value="blanc" checked>
+                        <label class="button blue" for="couleur-blanc">Blanc</label>
+
+                        <input type="radio" id="couleur-noir" name="couleur" value="noir">
+                        <label class="button blue" for="couleur-noir">Noir</label>
+
+                    </div>
+
+                    <h3 class="subtitle">Association à soutenir</h3>
+
+                    <div class="radio-div">
+                        <input type="radio" id="asso0" name="association" value="0" required>
+                        <label class="charityIcon button" for="asso0" title="WWF">
+                            <img src="../images/logos-transp/logo0.png">
+                        </label>
+
+                        <input type="radio" id="asso1" name="association" value="1">
+                        <label class="charityIcon button" for="asso1" title="Les restaurants du cœur">
+                            <img src="../images/logos-transp/logo1.png">
+                        </label>
+
+                        <input type="radio" id="asso2" name="association" value="2">
+                        <label class="charityIcon button" for="asso2" title="Secours populaire français">
+                            <img src="../images/logos-transp/logo2.png">
+                        </label>
+
+                        <input type="radio" id="asso3" name="association" value="3">
+                        <label class="charityIcon button" for="asso3" title="UNICEF">
+                            <img src="../images/logos-transp/logo3.png">
+                        </label>
+
+                        <input type="radio" id="asso4" name="association" value="4">
+                        <label class="charityIcon button" for="asso4" title="Action contre La Faim">
+                            <img src="../images/logos-transp/logo4.png">
+                        </label>
+
+                        <input type="radio" id="asso5" name="association" value="5">
+                        <label class="charityIcon button" for="asso5" title="Sea Shepherd Conservation Society">
+                            <img src="../images/logos-transp/logo5.png">
+                        </label>
+
+                        <input type="radio" id="asso6" name="association" value="6">
+                        <label class="charityIcon button" for="asso6" title="Croix-Rouge française">
+                            <img src="../images/logos-transp/logo6.png">
+                        </label>
+
+                        <input type="radio" id="asso7" name="association" value="7">
+                        <label class="charityIcon button" for="asso7" title="Médecins sans frontières">
+                            <img src="../images/logos-transp/logo7.png">
+                        </label>
+
+                        <input type="radio" id="asso8" name="association" value="8">
+                        <label class="charityIcon button" for="asso8" title="30 Millions d'Amis">
+                            <img src="../images/logos-transp/logo8.png">
+                        </label>
+
+                        <input type="radio" id="asso9" name="association" value="9">
+                        <label class="charityIcon button" for="asso9" title="Institut Pasteur">
+                            <img src="../images/logos-transp/logo9.png">
+                        </label>
+
+
+                        <!----
+                        
+                        <input type="radio" id="a" name="association" value="a">
+                        <label class="charityIcon button" for="a" title="Association 1">A</label>
+                        <input type="radio" id="b" name="association" value="b">
+                        <label class="charityIcon button" for="b">B</label>
+                        <input type="radio" id="c" name="association" value="c">
+                        <label class="charityIcon button" for="c">C</label>
+                        <input type="radio" id="d" name="association" value="d">
+                        <label class="charityIcon button" for="d">D</label>
+                        <input type="radio" id="e" name="association" value="e">
+                        <label class="charityIcon button" for="e">E</label>
+                        <input type="radio" id="f" name="association" value="f">
+                        <label class="charityIcon button" for="f">F</label>
+                        <input type="radio" id="g" name="association" value="g">
+                        <label class="charityIcon button" for="g">G</label>
+                        <input type="radio" id="h" name="association" value="h">
+                        <label class="charityIcon button" for="h">H</label>
+                        <input type="radio" id="i" name="association" value="i">
+                        <label class="charityIcon button" for="i">I</label>
+                        <input type="radio" id="j" name="association" value="j">
+                        <label class="charityIcon button" for="j">J</label>
+                        <input type="radio" id="k" name="association" value="k">
+                        <label class="charityIcon button" for="k">K</label>
+                        <input type="radio" id="l" name="association" value="l">
+                        <label class="charityIcon button" for="l">L</label>
+                        <input type="radio" id="m" name="association" value="m">
+                        <label class="charityIcon button" for="m">M</label>
+                        <input type="radio" id="n" name="association" value="n">
+                        <label class="charityIcon button" for="n">N</label>
+                        <input type="radio" id="o" name="association" value="o">
+                        <label class="charityIcon button" for="o">O</label>
+                        <input type="radio" id="p" name="association" value="p">
+                        <label class="charityIcon button" for="p">P</label>
+                        <input type="radio" id="q" name="association" value="q">
+                        <label class="charityIcon button" for="q">Q</label>
+                        <input type="radio" id="r" name="association" value="r">
+                        <label class="charityIcon button" for="r">R</label>
+                        <input type="radio" id="s" name="association" value="s">
+                        <label class="charityIcon button" for="s">S</label>
+                        <input type="radio" id="t" name="association" value="t">
+                        <label class="charityIcon button" for="t">T</label>
+                        <input type="radio" id="u" name="association" value="u">
+                        <label class="charityIcon button" for="u">U</label>
+                        <input type="radio" id="v" name="association" value="v">
+                        <label class="charityIcon button" for="v">V</label>
+                        <input type="radio" id="w" name="association" value="w">
+                        <label class="charityIcon button" for="w">W</label>
+                        <input type="radio" id="x" name="association" value="x">
+                        <label class="charityIcon button" for="x">X</label>
+                        <input type="radio" id="y" name="association" value="y">
+                        <label class="charityIcon button" for="y">Y</label>
+                        <input type="radio" id="z" name="association" value="z">
+                        <label class="charityIcon button" for="z">Z</label>
+                        
+                        <!---->
+                    </div>
+                </div>
+
+                <div class="desc-foot">
+                    <button class="blue confirmButton">Ajouter au panier ✔</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script>
+
+    let thing = "";
+
+    for (let i = 0; i < 26; ++i) {
+        const letter = String.fromCharCode("a".charCodeAt() + i);
+
+        thing += '<input type="radio" id="' + letter + '" name="association" value="' + letter + '">\n';
+        thing += '<label class="charityIcon button" for="' + letter + '">' + letter.toUpperCase() + '</label>\n';
+    }
+
+</script>
+{% endblock script %}
