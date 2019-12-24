@@ -1,0 +1,164 @@
+{% extends 'base.html.twig' %}
+
+{% block style %}
+<link rel="stylesheet" href="../components/buttons.css">
+<link rel="stylesheet" href="../components/progbars.css">
+<link rel="stylesheet" href="../components/criterions.css">
+<link rel="stylesheet" href="../style/connexion.css">
+<link rel="stylesheet" href="../style/form.css">
+{% endblock %}
+
+{% block title %}
+    Inscrivez-vouz
+{% endblock %}
+
+{% block content %}
+<div class="page-inner">
+    <h3 class="page-title">Inscription</h3>
+
+    <div class="progBar" id="progbar">
+        <div class="progArrow select"><text>Informations authentification</text></div>
+        <div class="progArrow"><text>Localisation</text></div>
+        <div class="progArrow"><text>Informations complémentaires</text></div>
+    </div>
+
+    <form id="form" method="GET" action="">
+        <div class="categ-container" id="tabs">
+            <div class="categ select">
+                <div class="criterion" title="Champ indispensable">
+                    <input autocomplete="off" required name="nom">
+                    <label>Nom</label>
+                </div>
+                <div class="criterion" title="Champ indispensable">
+                    <input required name="prenom">
+                    <label>Prénom</label>
+                </div>
+                <div class="criterion" title="Champ indispensable">
+                    <input required name="email">
+                    <label>Adresse mail</label>
+                </div>
+                <div class="criterion" title="Champ indispensable">
+                    <input type="password" required name="mot-de-passe">
+                    <label>Mot de passe</label>
+                </div>
+
+                <div class="categ-options">
+                    <text></text>
+                    <text class="button hover-full blue" onclick='selectStep(1);'>Suivant</text>
+                </div>
+                <div class="categ-options small">
+                    <text></text>
+                    <text class="button hover-full blue" onclick='selectStep(1);'>&gt;</text>
+                </div>
+            </div>
+
+            <div class="categ">
+                <div class="criterion" title="Champ optionnel">
+                    <input name="adresse">
+                    <label>Adresse</label>
+                </div>
+                <div class="criterion" title="Champ optionnel">
+                    <input name="ville">
+                    <label>Ville</label>
+                </div>
+                <div class="criterion" title="Champ optionnel">
+                    <input name="code-postal">
+                    <label>Code postal</label>
+                </div>
+                <div class="criterion" title="Champ optionnel">
+                    <input name="pays">
+                    <label>Pays</label>
+                </div>
+
+                <div class="categ-options">
+                    <text class="button hover-full blue" onclick='selectStep(0);'>Précédent</text>
+                    <text class="button hover-full blue" onclick='selectStep(2);'>Suivant</text>
+                </div>
+                <div class="categ-options small">
+                    <text class="button hover-full blue" onclick='selectStep(0);'>&lt;</text>
+                    <text class="button hover-full blue" onclick='selectStep(2);'>&gt;</text>
+                </div>
+            </div>
+
+            <div class="categ">
+                <div class="criterion" title="Champ optionnel">
+                    <input name="telephone">
+                    <label>Téléphone</label>
+                </div>
+                <div class="criterion" title="Champ optionnel">
+                    <input name="sexe">
+                    <label>Sexe</label>
+                </div>
+                <div class="criterion" title="Champ optionnel">
+                    <input name="date-naissance">
+                    <label>Date de naissance</label>
+                </div>
+
+                <div class="categ-options">
+                    <text class="button hover-full blue" onclick='selectStep(1);'>Précédent</text>
+                    <input class="hover-full blue" type="submit" onclick='invalidProcedure(event);'>
+                </div>
+                <div class="categ-options small">
+                    <text class="button hover-full blue" onclick='selectStep(1);'>&lt;</text>
+                    <input class="hover-full blue" type="submit" value="✔" onclick='invalidProcedure(event);'>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+{% block script %}
+<script>
+
+    function selectStep(id) {
+        const progbar = document.getElementById("progbar");
+        const progbarStep = progbar.children[id];
+
+        if (progbarStep) {
+            selectUnique(progbarStep);
+        }
+
+        const stepTabs = document.getElementById("tabs");
+        const stepTab = stepTabs.children[id];
+
+        if (stepTab) {
+            selectUnique(stepTab);
+            setTabableUnique(stepTab);
+        }
+    }
+
+    function invalidProcedure(event) {
+        event.preventDefault();
+
+        function removeNotice(event) {
+            removeClass(this, "notice");
+
+            this.removeEventListener(event.type, removeNotice);
+        }
+
+        const form = document.getElementById("form");
+
+        if (form.checkValidity()) {
+            form.submit();
+        } else {
+            selectStep(0);
+
+            const requiredInputs = form.querySelectorAll("[required]");
+
+            /**/
+
+            for (let i = 0; i < requiredInputs.length; ++i) {
+                const input = requiredInputs[i];
+
+                addClass(input, "notice");
+
+                input.addEventListener("focus", removeNotice);
+            }
+
+            /**/
+        }
+    }
+
+</script>
+{% endblock %}
