@@ -55,7 +55,6 @@
 /pug/
 /jquery/
 jquery.js
-*.jpg
 
 # draft
 html-draft/
