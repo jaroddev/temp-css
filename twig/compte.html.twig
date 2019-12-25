@@ -1,5 +1,6 @@
 {% extends 'template/base.html.twig' %}
 
+{% from "components/bouton_compte.html.twig" import big_button %}
 
 {% block style %}
 <link rel="stylesheet" href="../layouts/template.css">
@@ -8,7 +9,7 @@
 {% endblock style %}
 
 {% block title %}
-    Mon compte
+Mon compte
 {% endblock title %}
 
 {% block content %}
@@ -19,32 +20,17 @@
         commandes.</p>
 
     <div style='display : flex; justify-content : space-around; margin: 64px 8.33% 0 8.33%;'>
-        <div class="button big full black">
-            <div class="top">
-                <img src="../images/list.png"></img>
-            </div>
-            <div class="description">
-                HISTORIQUE ET DETAILS DE MES COMMANDES
-            </div>
-        </div>
 
-        <div class="button big full black">
-            <div class="top">
-                <img src="../images/arrows.png"></img>
-            </div>
-            <div class="description">
-                MES RETOURS de MARCHANDISE
-            </div>
-        </div>
+        {{ big_button('list.png', 'HISTORIQUE ET DETAILS DE MES COMMANDES') }}
 
-        <div class="button big full black">
-            <div class="top">
-                <img src="../images/user.png"></img>
-            </div>
-            <div class="description">
-                MES INFORMATIONS PERSONNELLES
-            </div>
-        </div>
+        {{ big_button('arrows.png', 'MES RETOURS de MARCHANDISE') }}
+
+        {{ big_button('user.png', 'MES INFORMATIONS PERSONNELLES') }}
+        
+        {{ big_button('house.png', 'MES ADRESSES') }}
+
+        <!--
+            I left an example of your previous code here
 
         <div class="button big full black">
             <div class="top">
@@ -54,8 +40,8 @@
                 MES ADRESSES
             </div>
         </div>
+        -->
+    
     </div>
 </div>
 {% endblock content %}
-
-
