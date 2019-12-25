@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($page_name)){
-    $page_name = 'base.html.twig';
+    $page_name = 'template/base.html.twig';
 }
 
 if(!isset($options)){

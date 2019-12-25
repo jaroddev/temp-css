@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../layouts/normalize.css">
+        <link rel="stylesheet" href="../layouts/template.css">
+        {% block style %}
+            
+        {% endblock %}
+        <title>
+            {% block title %} test
+            {% endblock %} - Unison
+        </title>
+        
+    </head>
+
+    <body>
+        {% include 'template/header.html.twig' %}
+        <main>
+            {% block content %}
+            
+            {% endblock %}
+        </main>
+        {% include 'template/footer.html.twig' %}
+        <script src="../js/common.js"></script>
+        {% block script %}
+        
+        {% endblock %}
+    </body>
+</html>
