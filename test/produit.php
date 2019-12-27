@@ -6,9 +6,15 @@ $to_escape_value = '</h1><script>alert("haha")</script>';
 
 $product_name = 'Nom du produit';
 
-$color_array = [
-    'blanc',
-    'noir',
+$product_array = [
+    [   
+        'color' => 'blanc',
+        'image_name' => 'blanc.jpg',
+    ],
+    [   
+        'color' => 'noir',
+        'image_name' => 'noir.jpg',
+    ]
 ];
 
 /**
@@ -23,8 +29,7 @@ $test_value = $to_escape_value;
 $options = [
     'authentified' => false,
     'name' => $product_name,
-    'default_color' => 'noir.jpg',
-    'color_array' => $color_array,
+    'product_array' => $product_array,
 ];
 
 require_once('test.php') ;
