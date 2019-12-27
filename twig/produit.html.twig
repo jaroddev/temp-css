@@ -18,8 +18,7 @@
     <form>
         <div class="product-container">
             <div class="product-picture">
-                <img class="product"
-                    src='../images/produit/{{ name }}/{{ default_color }}'>
+                <img class="product" src='../images/produit/{{ name }}/{{ product_array[0]['image_name'] }}'>
             </div>
             <div class="product-desc">
                 <h1 class="desc-head">{{name}}</h1>
@@ -48,13 +47,16 @@
                     <h3 class="subtitle">Couleur</h3>
 
                     <div class="radio-div">
-                        
-                        {% for color in color_array %}
-                            <input type="radio" id="couleur-{{color}}" name="couleur" value="{{color}}"
-                                {% if color == color_array[0] %} checked {% endif %}>
-                            <label class="button blue" for="couleur-{{color}}">{{color | capitalize}}</label>
+                        {% for product in product_array %}
+                        <input type="radio" id="couleur-{{product['color']}}" name="couleur"
+                            value="{{product['color']}}"
+                            data-target="../images/produit/{{ name }}/{{ product['image_name'] }}"
+                            {% if product['color'] == product_array[0]['color'] %} checked {% endif %}>
+                        <label class="button blue" for="couleur-{{product['color']}}">
+                            {{product['color'] | capitalize}}
+                        </label>
                         {% endfor %}
-                    
+
                     </div>
 
                     <h3 class="subtitle">Association à soutenir</h3>
