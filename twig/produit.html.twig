@@ -137,4 +137,41 @@
     }
 
 </script>
+
+<script>
+
+    function getClikedCheckbox() {
+        var checkboxes = document.getElementsByName('couleur');
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                return checkboxes[i]
+            }
+        }
+        // Should be impossible
+        return null
+    }
+
+    function getProductImage() {
+        return document.querySelector('img.product')
+    }
+
+    function addCheckboxListener() {
+        var checkboxes = document.getElementsByName('couleur')
+        for (var i = 0; i < checkboxes.length; i++) {
+            checkboxes[i].addEventListener('click', changeProductImage)
+        }
+
+    }
+
+    function changeProductImage() {
+        var checked = getClikedCheckbox()
+        var image = getProductImage()
+
+        image.src = checked.getAttribute('data-target');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        addCheckboxListener();
+    })
+</script>
 {% endblock script %}
