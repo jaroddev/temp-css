@@ -19,7 +19,7 @@ Titre du produit haha hihi
         <div class="product-container">
             <div class="product-picture">
                 <img class="product"
-                    src='../images/produit/{{ image_defaut }}'>
+                    src='../images/produit/{{ name }}/{{ default_color }}'>
             </div>
             <div class="product-desc">
                 <h1 class="desc-head">{{name}}</h1>
@@ -48,12 +48,13 @@ Titre du produit haha hihi
                     <h3 class="subtitle">Couleur</h3>
 
                     <div class="radio-div">
-                        <input type="radio" id="couleur-blanc" name="couleur" value="blanc" checked>
-                        <label class="button blue" for="couleur-blanc">Blanc</label>
-
-                        <input type="radio" id="couleur-noir" name="couleur" value="noir">
-                        <label class="button blue" for="couleur-noir">Noir</label>
-
+                        
+                        {% for color in color_array %}
+                            <input type="radio" id="couleur-{{color}}" name="couleur" value="{{color}}"
+                                {% if color == color_array[0] %} checked {% endif %}>
+                            <label class="button blue" for="couleur-{{color}}">{{color | capitalize}}</label>
+                        {% endfor %}
+                    
                     </div>
 
                     <h3 class="subtitle">Association à soutenir</h3>

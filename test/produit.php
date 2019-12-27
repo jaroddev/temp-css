@@ -6,11 +6,16 @@ $to_escape_value = '</h1><script>alert("haha")</script>';
 
 $product_name = 'Nom du produit';
 
+$color_array = [
+    'blanc',
+    'noir',
+];
+
 /**
  * Change the value of options['name'] to test CSRF security failure and insert javascript into markup
  * 
  * $to_escape_value to test javascript code insertion
- * $product_name to display a test product name 
+ * $product_name to display a product name 
  */
 
 $test_value = $to_escape_value;
@@ -18,7 +23,8 @@ $test_value = $to_escape_value;
 $options = [
     'authentified' => false,
     'name' => $product_name,
-    'image_defaut' => 'T-shirt_Adn.jpg',
+    'default_color' => 'noir.jpg',
+    'color_array' => $color_array,
 ];
 
 require_once('test.php') ;
