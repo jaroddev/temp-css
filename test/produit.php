@@ -14,6 +14,10 @@ $product_array = [
     [   
         'color' => 'noir',
         'image_name' => 'noir.jpg',
+    ],
+    [
+        'color' => 'pas d\'image',
+        'image_name' => 'aucune'
     ]
 ];
 

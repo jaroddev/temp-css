@@ -171,6 +171,9 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+        getProductImage().addEventListener('error', function (){
+            getProductImage().src = '../images/produit/no_image.jpg'    
+        })
         addCheckboxListener();
     })
 </script>
