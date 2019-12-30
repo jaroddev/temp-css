@@ -28,8 +28,6 @@ $product_array = [
  * $product_name to display a product name 
  */
 
-$test_value = $to_escape_value;
-
 $options = [
     'authentified' => false,
     'name' => $product_name,
