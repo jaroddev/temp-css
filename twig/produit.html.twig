@@ -17,7 +17,8 @@
     <form>
         <div class="product-container">
             <div class="product-picture">
-                <img class="product" alt='Vetement en lin chez UNISON' src='../images/produit/{{ name }}/{{ product_array[0]['image_name'] }}'>
+                <img class="product" alt='Vetement en lin chez UNISON'
+                    src='../images/produit/{{ name }}/{{ product_array[0]['image_name'] }}'>
             </div>
             <div class="product-desc">
                 <h1 class="desc-head">{{name}}</h1>
@@ -125,7 +126,7 @@
 
 {% block script %}
 <script>
-
+    
     function getClikedCheckbox() {
         var checkboxes = document.getElementsByName('couleur');
         for (var i = 0; i < checkboxes.length; i++) {
@@ -157,9 +158,6 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-        getProductImage().addEventListener('error', function (){
-            getProductImage().src = '../images/produit/no_image.jpg'    
-        })
         addCheckboxListener();
     })
 </script>
