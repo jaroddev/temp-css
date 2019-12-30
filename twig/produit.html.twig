@@ -1,7 +1,6 @@
 {% extends 'template/base.html.twig' %}
 
 {% block style %}
-<link rel="stylesheet" href="../layouts/template.css">
 <link rel="stylesheet" href="../components/buttons.css">
 <link rel="stylesheet" href="../style/connexion.css">
 <link rel="stylesheet" href="../style/voir-produit.css">
@@ -125,19 +124,6 @@
 {% endblock content %}
 
 {% block script %}
-<script>
-
-    let thing = "";
-
-    for (let i = 0; i < 26; ++i) {
-        const letter = String.fromCharCode("a".charCodeAt() + i);
-
-        thing += '<input type="radio" id="' + letter + '" name="association" value="' + letter + '">\n';
-        thing += '<label class="charityIcon button" for="' + letter + '">' + letter.toUpperCase() + '</label>\n';
-    }
-
-</script>
-
 <script>
 
     function getClikedCheckbox() {
