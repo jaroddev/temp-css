@@ -1,0 +1,38 @@
+{% macro product_card(name, color, price) %}
+
+<div class="card">
+    <div class="card-image">
+        <img src="../images/produit/{{name}}/{{color}}" alt="{{name}}">
+    </div>
+    <div class="card-info">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                {{name}}
+            </div>
+            <div class="col s12 m6 l6">
+                {{ price }} €
+            </div>
+        </div>
+    </div>
+    <div class="actions">
+        <div class="row">
+            <div class="col s5 m5 l5 full">
+                <button>
+                    Noter
+                </button>
+            </div>
+            <div class="col s2 m2 l2 full">
+                <p>
+
+                </p>
+            </div>
+            <div class="col s5 m5 l5 full">
+                <button>
+                    Voir
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endmacro %}

@@ -1,0 +1,28 @@
+{% extends 'template/base.html.twig' %}
+
+{% from "components/article_grille_produit.html.twig" import product_card %}
+
+{% block style %}
+<link rel="stylesheet" href="../components/cards.css">
+<link rel="stylesheet" href="../components/buttons.css">
+<link rel="stylesheet" href="../style/product.css">
+<link rel="stylesheet" href="../layouts/grid.css">
+{% endblock %}
+
+{% block title %}
+Quel type de vetements ?
+{% endblock %}
+
+{% block content %}
+<div class="row full">
+    {% for product in product_array %}
+    <div class="col s12 m6 l3 ">
+        {{ product_card(product['product_name'], product['image_name'], product['price']) }}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
