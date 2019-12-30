@@ -17,6 +17,10 @@
 }
 
 .card-image {
+    border-bottom: 1px solid lightgray;
+}
+
+.card-image {
     height: 350px;
 }
 
@@ -27,16 +31,20 @@
 }
 
 .card-info {
-    height: 50px;
-    border-bottom: 1px solid lightgray;
-    text-align: center;
-    line-height: 3em;
     font-weight: bold;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+}
+
+.price, .name {
+    align-self: center;
+
 }
 
 .actions {
-    border-top: 1px solid lightgray;
-    padding-top: 20px;
+    height: 40px;
 }
 
 .actions .row {
