@@ -15,6 +15,11 @@ $product_array = [
         'price' => 35.50 ,
     ],
     [   
+        'product_name' => 'Nom du produit',
+        'image_name' => 'noir.jpg',
+        'price' => 35.50 ,
+    ],
+    [   
         'product_name' => 'Chemise tendance',
         'image_name' => 'noir.jpg',
         'price' => 53.00 ,
