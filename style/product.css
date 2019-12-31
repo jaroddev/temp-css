@@ -1,56 +1,56 @@
-/* CSS page for products design */
-
-/* Color for test */
-
-.blue {
-    background-color: #43b5cd;
+.row {
+    padding-top: 30px;
 }
 
-.black {
-    background: black;
+.row .row {
+    padding: 0;
 }
 
-/* Menu cards */
-
-.menu-title {
-    height: 45px;
-    color: white;
+.row>.card {
+    padding-top: 10px;
 }
 
-.menu-content, .menu-content ul {
+.filters {
     display: flex;
-}
-
-.menu-content ul {
     flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.menu-content ul, .menu-content ul li {
-    flex-grow: 1;
+.filter, .filter-title {
+    align-self: center;
+    color: #888;
+}
+
+.filter-title {
+    position: relative;
+    right: 25px;
+}
+
+.filter {
+    margin: 4px auto;
+}
+
+h2 {
+    padding: 5px 0;
+    font-weight: bold;
+    color: #43B5CD;
+    border: 2px solid #43B5CD;
+    display: block;
     text-align: center;
-    line-height: 3em;
-}
-
-.menu-content li a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
-
-.menu-content li {
-    background-color: #f1f1f1;
     width: 100%;
 }
 
-.menu-content li:hover {
-    background-color: lightgray;
-}
-
-/* Products (clothes) card */
-
-.clothe-actions {
-    display: flex;
-    padding: 0 15px;
-    justify-content: space-between;
-    \align-content: center;
+@media only screen and (max-width: 1024px) {
+    .up-on-medium {
+        height: 300px;
+    }
+    .filters {
+        display: inline-block;
+        height: 90%;
+        width: 300px;
+        margin: auto 0;
+    }
+    h2 {}
 }
