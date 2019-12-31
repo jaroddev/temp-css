@@ -1,18 +1,12 @@
 {% extends 'template/base.html.twig' %}
 
-{% from "components/article_grille_produit.html.twig" import product_card %}
+{% from "components/article_grille_produit.html.twig" import product_card, menu %}
 
 {% block style %}
 <link rel="stylesheet" href="../components/cards.css">
 <link rel="stylesheet" href="../components/buttons.css">
 <link rel="stylesheet" href="../layouts/grid.css">
-<style>
-    @media only screen and (max-width: 1024px) {
-        .up-on-medium {
-            height: 300px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="../style/product.css">
 {% endblock %}
 
 {% block title %}
@@ -23,6 +17,33 @@ Quel type de vetements ?
 <div class="row full">
 
     <div class="up-on-medium col s3 m3 l3 full">
+
+        <h2>{{ 'catégories' |upper}}</h2>
+
+        {{ menu('unisexe', [
+            'téléton',
+            'octobre Rose',
+            'resto du coeur'
+        ]) }}
+
+        {{ menu('collaborations', [
+            'T-shirt',
+            'Sweat',
+            'Pantalon'
+        ]) }}
+
+        {{ menu('taile', [
+            's',
+            'm',
+            'l',
+            'xL'
+        ]) }}
+
+        {{ menu('couleur', [
+            'noir',
+            'blanc',
+            'autre'
+        ]) }}
 
     </div>
 
