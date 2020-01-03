@@ -20,8 +20,8 @@ This repository contains the front-end part of a bigger project named Unison
 If you wish to first code in a safe way html then create a html-draft folder,
 this folder is ignored by git.
 
-## css folder structure
+## CSS folder structure
 The css is separated in few folders:
  - layouts, it contains all css script all the pages should be using.
- - style, only one page css script should find his way here.
+ - style, only one page css scripts should find their ways here.
  - components, often used components style like button or cards should be moved here.
