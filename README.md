@@ -25,3 +25,23 @@ The css is separated in few folders:
  - layouts, it contains all css script all the pages should be using.
  - style, only one page css scripts should find their ways here.
  - components, often used components style like button or cards should be moved here.
+
+## TODO list
+ - Add responsiveness to the other pages (Account/*.html.twig, )
+ - Increase responsiveness quality of the header and footer
+ - Increase responsiveness quality of the clothe/list.html.twig page
+ - Create the homepage.html.twig page
+ - Create the about_us.html.twig page
+ - Write a documentation for the tests
+ - Write documentation for the twig pages
+ - Donations and purchases summary
+
+
+## DONE task list
+ - Add responsiveness to the account/add.html.twig
+ - Display the clothes
+ - Display a clothe
+ - Create an account page
+ - Connection page
+ - account index.html.twig page
+ - And many others
