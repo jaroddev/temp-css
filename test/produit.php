@@ -1,6 +1,6 @@
 <?php 
 
-$page_name = 'produit.html.twig';
+$page_name = 'clothe/show.html.twig';
 
 $to_escape_value = '</h1><script>alert("haha")</script>';
 

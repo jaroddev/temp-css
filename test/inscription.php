@@ -1,6 +1,6 @@
 <?php 
 
-$page_name = 'inscription.html.twig';
+$page_name = 'account/add.html.twig';
 
 $options = [
     'authentified' => false,

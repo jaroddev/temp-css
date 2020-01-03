@@ -1,6 +1,6 @@
 <?php 
 
-$page_name = 'connexion.html.twig';
+$page_name = 'account/connection.html.twig';
 
 $options = [
     'authentified' => false,
