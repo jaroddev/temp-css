@@ -37,7 +37,7 @@ The css is separated in few folders:
  - Donations and purchases summary
 
 
-## DONE task list
+## DONE tasks list
  - Add responsiveness to the account/add.html.twig
  - Display the clothes
  - Display a clothe
@@ -45,3 +45,15 @@ The css is separated in few folders:
  - Connection page
  - account index.html.twig page
  - And many others
+
+
+## IN PROGRESS
+
+### @sitedevente
+ - about_us/index.html.twig layout and basic design  
+ - Responsiveness of the clothe/list.html.twig page
+ - improve the filters desing in the clothe/list.html.twig 
+
+### @ Adn
+ - cart/index.html.twig layout and basic design
+
