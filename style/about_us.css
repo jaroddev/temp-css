@@ -1,0 +1,59 @@
+.col.pad {
+    padding: 32px 0;
+}
+
+p a {
+    color: green;
+}
+
+.banner>* {
+    color: white;
+    position: relative;
+}
+
+.banner>img {
+    z-index: -1200;
+    position: absolute;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px ;
+}
+
+.banner>h1 {
+    top: 32px;
+    font-size: 3em;
+}
+
+.banner>p {
+    top: 128px;
+    margin: 0 auto;
+    font-size: 1.8em;
+}
+
+.banner {
+    height: 700px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container .side {
+    height: 100%;
+}
+
+.col.pad p {
+    font-size: 20px;
+}
+
+.side img {
+    object-fit: cover;
+}
+
+.tgrey {
+    background-color: #d9d9d9;
+}
