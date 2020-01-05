@@ -27,7 +27,7 @@ The css is separated in few folders:
  - components, often used components style like button or cards should be moved here.
 
 ## TODO list
- - Add responsiveness to the other pages (Account/*.html.twig, )
+ - Add responsiveness to the other pages (Account/*.html.twig)
  - Increase responsiveness quality of the header and footer
  - Increase responsiveness quality of the clothe/list.html.twig page
  - Create the homepage.html.twig page
@@ -35,6 +35,9 @@ The css is separated in few folders:
  - Write a documentation for the tests
  - Write documentation for the twig pages
  - Donations and purchases summary
+ - Add page description
+ - Increase web search prominence
+ - Write a css script to make text responsive
 
 
 ## DONE tasks list
@@ -44,13 +47,11 @@ The css is separated in few folders:
  - Create an account page
  - Connection page
  - account index.html.twig page
- - And many others
-
+ - about_us/index.html.twig layout and basic design  
 
 ## IN PROGRESS
 
 ### @sitedevente
- - about_us/index.html.twig layout and basic design  
  - Responsiveness of the clothe/list.html.twig page
  - improve the filters desing in the clothe/list.html.twig 
 
