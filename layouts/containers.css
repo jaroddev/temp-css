@@ -1,0 +1,33 @@
+
+.centerer {
+    display: flex;
+    justify-content: center;
+    
+    margin: auto;
+}
+
+.container0 {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 32px;
+    width: 768px;
+}
+
+.container1 {
+    padding: 32px;
+    width: 384px;
+}
+
+@media only screen and (max-width: 768px) {
+    .centerer {
+        margin: 0;
+    }
+    
+    .container0 {
+        width: 100%;
+    }
+    
+    .shadow {
+        box-shadow: none !important;
+    }
+}
