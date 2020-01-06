@@ -8,18 +8,18 @@ This repository contains the front-end part of a bigger project named Unison
  - launch your terminal
  - type the following command "composer install"
 
-## How to name a new twig 
- - Respect Twig file naming convention, use snake_case
- - If the index.html.twig doesn't exist name your file index
- - 
+## How to create a twig page
+[See here to learn how we organized our twig files](https://github.com/sitedevente/temp-css/md-docs/PAGE.md)
 
-## How to create a test
- - go into the test folder
- - create a $page_name variable which must contains a path "<folder_name><file_name>.html.twig"
+## Testing the front-end
+[How to render and test an existing twig file](https://github.com/sitedevente/temp-css/md-docs/TEST.md)
 
-## How to add data to an existing test
- - create an $options php array if it does not exist
- - put your dummy data set in it
+## Forms
+
+[Learn how to create a form](https://github.com/sitedevente/temp-css/md-docs/FORM.md)
+
+## CSS organisation
+[How to contribute by creating a css script](https://github.com/sitedevente/temp-css/md-docs/CSS.md)
 
 ## html-draft
 If you wish to first code in a safe way html then create a html-draft folder,
@@ -62,4 +62,5 @@ The css is separated in few folders:
 
 ### @ Adn
  - cart/index.html.twig layout and basic design
-
+ - Improve form.css syntax to make it easier for contributors to create Unison-styled forms
+ - Documentation explaining how to build forms
