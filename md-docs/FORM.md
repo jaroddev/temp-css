@@ -70,8 +70,13 @@ Use a heading tag (most commonly h3) with the "form-subtitle" class.
 
 ## Positioning a single submit option
 
-
+    <div class="submit">
+        <input type="submit" value="Submit">
+    </div>
 
 ## Positioning multiple options in a row
 
-
+    <div class="options">
+        <text class="button blue">Previous</text>
+        <text class="button blue">Next</text>
+    </div>
