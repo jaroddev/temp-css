@@ -1,6 +1,6 @@
 <?php 
 
-$page_name = 'clothe/list.html.twig';
+$page_name = 'product/list.html.twig';
 
 /** 
  * Here we suppose that the back end find every first image for N products. 
