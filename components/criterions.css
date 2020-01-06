@@ -3,7 +3,9 @@
 
 input:not([type]),
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="number"],
+input[type="email"] {
     transition: 0.375s;
     
     outline: none;
@@ -19,7 +21,9 @@ input[type="password"] {
 
 input:not([type]):hover,
 input[type="text"]:hover,
-input[type="password"]:hover {
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover {
     transition: 0.25s;
     
     border-color: gray;
@@ -28,7 +32,9 @@ input[type="password"]:hover {
 
 input:not([type]):focus,
 input[type="text"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
     transition: 0.125s;
     
     border-color: #43B5CD;
