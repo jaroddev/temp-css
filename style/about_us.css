@@ -55,8 +55,10 @@ p a {
     border: 2px solid lightgray;
 }
 
-.container .side {
-    height: 100%;
+.container img.right {
+    position: relative;
+    top: 25px;
+    left: 100px;
 }
 
 .col.pad p {
