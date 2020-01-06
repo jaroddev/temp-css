@@ -8,6 +8,11 @@ This repository contains the front-end part of a bigger project named Unison
  - launch your terminal
  - type the following command "composer install"
 
+## How to name a new twig 
+ - Respect Twig file naming convention, use snake_case
+ - If the index.html.twig doesn't exist name your file index
+ - 
+
 ## How to create a test
  - go into the test folder
  - create a $page_name variable which must contains a path "<folder_name><file_name>.html.twig"
@@ -37,7 +42,7 @@ The css is separated in few folders:
  - Donations and purchases summary
  - Add page description
  - Increase web search prominence
- - Write a css script to make text responsive
+ - Make text responsive
 
 
 ## DONE tasks list
