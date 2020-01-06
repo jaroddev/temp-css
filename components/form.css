@@ -1,0 +1,39 @@
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    transition: 0s;
+    
+    border-color: #43B5CD;
+    background-color: #43B5CD;
+    color: white;
+}
+
+div.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.submit *, div.options * {
+    font-size: 24px;
+}
+
+.form-subtitle {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    padding-bottom: 0.5em;
+}
+
+.form-category {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    
+    padding-left: 32px;
+}
