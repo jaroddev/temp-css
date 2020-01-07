@@ -24,28 +24,6 @@
 	margin-left: auto;
 }
 
-/* height ratio */
-
-.full {
-	height: 100%;
-}
-
-.half {
-	height: 50%;
-}
-
-.third {
-	height: 33.33%;
-}
-
-.fourth {
-	height: 25%;
-}
-
-.tenth {
-	height: 10%;
-}
-
 /* width ratio on phone  */
 
 .row .col.s1 {
