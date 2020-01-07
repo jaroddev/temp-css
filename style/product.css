@@ -2,18 +2,11 @@
     padding-top: 30px;
 }
 
-.row .row {
-    padding: 0;
-}
-
-.row>.card {
-    padding-top: 10px;
+.row .card {
+    margin-bottom: 20px;
 }
 
 .filters {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
     margin: 0 auto;
     margin-top: 20px;
 }
@@ -35,22 +28,6 @@
 h2 {
     padding: 5px 0;
     font-weight: bold;
-    color: #43B5CD;
-    border: 2px solid #43B5CD;
     display: block;
-    text-align: center;
     width: 100%;
-}
-
-@media only screen and (max-width: 1024px) {
-    .up-on-medium {
-        height: 300px;
-    }
-    .filters {
-        display: inline-block;
-        height: 90%;
-        width: 300px;
-        margin: auto 0;
-    }
-    h2 {}
 }
