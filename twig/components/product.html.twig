@@ -1,4 +1,4 @@
-{% macro product_card(name, color, price) %}
+{% macro card(name, color, price) %}
 
 <div class="card shadow round">
     <div class="card-image">
@@ -21,19 +21,3 @@
 
 {% endmacro %}
 
-{% macro menu(title, filters) %}
-
-<ul class="filters">
-    <h3 class="filter-title">
-        &mdash; {{ title |upper }}
-    </h3>
-
-    {% for sort in filters %}
-        <li class="filter">
-            {{ sort |capitalize }}
-        </li>
-    {% endfor %}
-
-</ul>
-
-{% endmacro %}
