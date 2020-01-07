@@ -1,19 +1,12 @@
 .card {
-    transition : 0.375s;
-    box-sizing : border-box;
-    
-    box-shadow : 0 1px 4px 1px gray;
-    border-radius : 0.5em;
-    padding : 2em 1.5em;
-    
-    display: flex;
-    flex-direction: column;
+    transition: 0.375s;
+    box-sizing: border-box;
+    padding: 2em 1.5em;
 }
 
 .round {
     overflow: hidden;
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3%;
+    border-radius: 0.5em;
 }
 
 .card-image {
@@ -21,13 +14,12 @@
 }
 
 .card-image {
-    height: 350px;
+    height: 150px;
+    text-align: center;
 }
 
 .card-image img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .card-info {
@@ -35,25 +27,14 @@
     height: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .price, .name {
     align-self: center;
-
 }
 
-.actions {
+.actions>a.button {
     height: 40px;
+    width: 100%;
 }
-
-.actions .row {
-    padding-left : 2em;
-    
-}
-
-.actions .row .col {
-    padding : 0;
-    
-}
-
