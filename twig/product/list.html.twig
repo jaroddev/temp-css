@@ -13,17 +13,19 @@ Quel type de vetements ?
 {% endblock %}
 
 {% block content %}
-<div class="row full">
+<div class="row">
 
-    <div class="up-on-medium col s3 m3 l3 full">
+    <div class="up-on-medium col s12 m12 l3 ">
 
-        <h2>{{ 'catégories' |upper}}</h2>
+        <h2 class="">{{ 'catégories' |upper}}</h2>
 
-        {{ menu('unisexe', [
-            'téléton',
-            'octobre Rose',
-            'resto du coeur'
-        ]) }}
+        <div class="col s4 l8">
+            {{ menu('unisexe', [
+                'téléton',
+                'octobre Rose',
+                'resto du coeur'
+            ]) }}
+        </div>
 
         {{ menu('collaborations', [
             'T-shirt',
@@ -46,16 +48,12 @@ Quel type de vetements ?
 
     </div>
 
-    <div class="col s12 m12 l9 full">
-
-        <div class="row full">
-            {% for product in product_array %}
-            <div class="col s12 m6 l4 ">
-                {{ product_card(product['product_name'], product['image_name'], product['price']) }}
+    <div class="col s12 m12 l9 ">
+        {% for product in product_array %}
+            <div class="col s12 m6 l3 ">
+                {{ card(product['product_name'], product['image_name'], product['price']) }}
             </div>
-            {% endfor %}
-        </div>
-
+        {% endfor %}
     </div>
 
 </div>
