@@ -1,9 +1,6 @@
-.row {
-    padding-top: 30px;
-}
-
 .row .card {
     margin-bottom: 20px;
+    margin: 16px auto;
 }
 
 .filters {
