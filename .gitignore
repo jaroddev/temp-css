@@ -58,3 +58,8 @@ jquery.js
 
 # draft
 html-draft/
+
+#auto_hook files
+github.php
+config.json
+shell/auto_pull.sh
