@@ -1,4 +1,6 @@
 
+/**/
+
 input[type="radio"] {
     display: none;
 }
@@ -10,6 +12,27 @@ input[type="radio"]:checked + label {
     background-color: #43B5CD;
     color: white;
 }
+
+/**/
+
+.date-input {
+    display: flex;
+    width: 256px;
+}
+
+input[type="number"].dn-day {
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+input[type="number"].dn-month {
+    border-radius: 0 0 0 0;
+}
+
+input[type="number"].dn-year {
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+/**/
 
 div.submit {
     display: flex;
@@ -26,6 +49,7 @@ div.submit *, div.options * {
 }
 
 .form-subtitle {
+    margin: 0.5em 0;
     border-style: solid;
     border-width: 0 0 1px 0;
     padding-bottom: 0.5em;
@@ -34,4 +58,10 @@ div.submit *, div.options * {
 .form-category {
     margin-top: 16px;
     margin-bottom: 32px;
+}
+
+.form-row {
+    display : flex;
+    
+    margin: 1em 0 2em 0;
 }
