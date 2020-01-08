@@ -1,3 +1,25 @@
+.carousel .carousel-item {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box !important;
+    padding: 10px 20px !important;
+    background-color: #ffbd59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6 !important;
+}
+
+.carousel-item.active {
+    background-color: #43b5cd !important;
+    opacity: 1 !important;
+}
+
+.carousel-item>img {
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
 .description {
     padding: 1em 1em;
 }
