@@ -1,34 +1,8 @@
 
 /**/
 
-.confirmButton {
-    transition : 0.2s;
-    /border : 1px solid gray;
-    padding : 0.5em;
-    background : white;
-    cursor : pointer;
-    
-    font-family: DejaVu Sans;
-}
-
-.confirmButton:hover {
-    transition : 0.1s;
-    /border-color : black;
-    background : #43B5CD;
-    color : white;
-    /text-shadow : 0 0.03125em 0.125em;
-}
-
-/**/
-
-.product-container {
+.container0 {
     display: flex;
-    
-    margin: auto;
-    
-    box-shadow : 0 1px 4px 1px gray;
-    
-    width: 768px;
 }
 
 .product-picture {
@@ -36,6 +10,7 @@
     align-items: center;
     justify-content: center;
     
+    padding: 16px;
     width: 50%;
 }
 
@@ -46,28 +21,24 @@ img.product {
     /background-color: #FFBD59;
 }
 
-.product-container input[type="radio"] {
-    display: none;
-}
-
-.product-container input[type="radio"]:checked + label {
-    transition : 0s;
-    
-    border-color: #43B5CD;
-    background-color: #43B5CD;
-    color: white;
-}
-
 .button {
     min-width: 32px;
-    margin: 0 4px;
+    margin: 0 0.25em;
 }
 
 /**/
 
+.price {
+    margin: 0.675em 0;
+    
+    color: gray;
+    
+    font-size: 24px;
+}
+
 .product-desc {
-    display: flex;
-    flex-direction: column;
+    /display: flex;
+    /flex-direction: column;
     
     box-sizing: border-box;
     
@@ -76,68 +47,45 @@ img.product {
     max-width: 50%;
 }
 
-.product-desc .desc-head {
-    margin: 0;
-}
-
-.product-desc .desc-main {
-    flex-grow: 1;
-}
-
-.radio-div {
+.form-category {
     display: flex;
     flex-wrap: nowrap;
     
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding-left: 0.5em;
+    padding-bottom: 0.25em;
+    
     user-select: none;
-    
     overflow-x: auto;
-    
-    padding: 2px 8px;
-    padding-bottom: 4px;
 }
 
-.radio-div::-webkit-scrollbar {
+.form-category * {
+    font-size: 18px;
+}
+
+.form-category::-webkit-scrollbar {
     width: 16px;
     height: 16px;
     background-color: white;
 }
 
-.radio-div::-webkit-scrollbar-track {
+.form-category::-webkit-scrollbar-track {
     border-radius : 16px;
     
     background-color: white;
 }
 
-.radio-div::-webkit-scrollbar-track:hover {
+.form-category::-webkit-scrollbar-track:hover {
     background-color: #F7F7F7;
 }
 
-.radio-div::-webkit-scrollbar-thumb {
+.form-category::-webkit-scrollbar-thumb {
     border-radius: 16px;
     
     width: 4px;
     
     background-color: #43B5CD;
-}
-
-.product-desc .desc-main * {
-    font-size: 18px;
-}
-
-.product-desc .desc-foot {
-    display: flex;
-    justify-content: flex-end;
-    
-    margin-top: 0.5em;
-}
-
-.product-desc .subtitle {
-    margin: 16px 0 16px 0;
-    
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    
-    border-color: black;
 }
 
 /**/
