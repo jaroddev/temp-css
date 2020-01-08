@@ -4,8 +4,8 @@
 <link rel="stylesheet" href="../components/buttons.css">
 <link rel="stylesheet" href="../components/progbars.css">
 <link rel="stylesheet" href="../components/criterions.css">
-<link rel="stylesheet" href="../style/connexion.css">
-<link rel="stylesheet" href="../style/form.css">
+<link rel="stylesheet" href="../components/form.css">
+<link rel="stylesheet" href="../style/register.css">
 {% endblock %}
 
 {% block title %}
@@ -22,85 +22,111 @@
         <div class="progArrow"><text>Informations complémentaires</text></div>
     </div>
 
-    <form id="form" method="GET" action="">
+    <form class="centerer" id="form" method="GET" action="">
         <div class="categ-container" id="tabs">
-            <div class="categ select">
-                <div class="criterion" title="Champ indispensable">
-                    <input autocomplete="off" required name="nom">
-                    <label>Nom</label>
+            <div class="categ shadow select">
+                <div class="form-category">
+                    <div class="criterion" title="Champ requis">
+                        <input autocomplete="off" required name="nom">
+                        <label>Nom</label>
+                    </div>
+                    <div class="criterion" title="Champ requis">
+                        <input required name="prenom">
+                        <label>Prénom</label>
+                    </div>
+                    <div class="criterion" title="Champ requis (identifiant@example.com)">
+                        <input type="email" required name="email">
+                        <label>Adresse mail</label>
+                    </div>
+                    <div class="criterion" title="Champ requis">
+                        <input type="password" required name="mot-de-passe">
+                        <label>Mot de passe</label>
+                    </div>
                 </div>
-                <div class="criterion" title="Champ indispensable">
-                    <input required name="prenom">
-                    <label>Prénom</label>
-                </div>
-                <div class="criterion" title="Champ indispensable">
-                    <input required name="email">
-                    <label>Adresse mail</label>
-                </div>
-                <div class="criterion" title="Champ indispensable">
-                    <input type="password" required name="mot-de-passe">
-                    <label>Mot de passe</label>
-                </div>
-
-                <div class="categ-options">
+                
+                <div class="options">
                     <text></text>
                     <text class="button hover-full blue" onclick='selectStep(1);'>Suivant</text>
                 </div>
-                <div class="categ-options small">
+                <div class="options small">
                     <text></text>
                     <text class="button hover-full blue" onclick='selectStep(1);'>&gt;</text>
                 </div>
             </div>
 
-            <div class="categ">
-                <div class="criterion" title="Champ optionnel">
-                    <input name="adresse">
-                    <label>Adresse</label>
+            <div class="categ shadow">
+                <div class="form-category">
+                    <div class="criterion" title="Champ optionnel">
+                        <input name="adresse">
+                        <label>Adresse</label>
+                    </div>
+                    <div class="criterion" title="Champ optionnel">
+                        <input name="ville">
+                        <label>Ville</label>
+                    </div>
+                    <div class="criterion" title="Champ optionnel">
+                        <input name="code-postal">
+                        <label>Code postal</label>
+                    </div>
+                    <div class="criterion" title="Champ optionnel">
+                        <input name="pays">
+                        <label>Pays</label>
+                    </div>
                 </div>
-                <div class="criterion" title="Champ optionnel">
-                    <input name="ville">
-                    <label>Ville</label>
-                </div>
-                <div class="criterion" title="Champ optionnel">
-                    <input name="code-postal">
-                    <label>Code postal</label>
-                </div>
-                <div class="criterion" title="Champ optionnel">
-                    <input name="pays">
-                    <label>Pays</label>
-                </div>
-
-                <div class="categ-options">
+                
+                <div class="options">
                     <text class="button hover-full blue" onclick='selectStep(0);'>Précédent</text>
                     <text class="button hover-full blue" onclick='selectStep(2);'>Suivant</text>
                 </div>
-                <div class="categ-options small">
+                <div class="options small">
                     <text class="button hover-full blue" onclick='selectStep(0);'>&lt;</text>
                     <text class="button hover-full blue" onclick='selectStep(2);'>&gt;</text>
                 </div>
             </div>
 
-            <div class="categ">
-                <div class="criterion" title="Champ optionnel">
-                    <input name="telephone">
-                    <label>Téléphone</label>
+            <div class="categ shadow">
+                <div class="form-category">
+                    <div class="criterion" title="Champ optionnel">
+                        <input name="telephone" pattern="^\d{10}$">
+                        <label>Téléphone</label>
+                    </div>
                 </div>
-                <div class="criterion" title="Champ optionnel">
-                    <input name="sexe">
-                    <label>Sexe</label>
+                
+                <h3 class="form-subtitle">Sexe</h3>
+                
+                <div class="form-category">
+                    <input type="radio" id="sexe-n" name="sexe" value="n" checked>
+                    <label class="button blue" for="sexe-n">Non spécifié</label>
+                    
+                    <input type="radio" id="sexe-f" name="sexe" value="f">
+                    <label class="button blue" for="sexe-f">Femme</label>
+                    
+                    <input type="radio" id="sexe-m" name="sexe" value="m">
+                    <label class="button blue" for="sexe-m">Homme</label>
                 </div>
-                <div class="criterion" title="Champ optionnel">
-                    <input name="date-naissance">
-                    <label>Date de naissance</label>
+                
+                <h3 class="form-subtitle">Date de naissance</h3>
+                
+                <div class="form-category date-input">
+                    <div class="criterion" title="Champ optionnel">
+                        <input type="number" class="dn-day" name="naissance-jour" value="01">
+                        <label>Jour</label>
+                    </div><div class="criterion" title="Champ optionnel">
+                        <input type="number" class="dn-month" name="naissance-jour" value="01">
+                        <label>Mois</label>
+                    </div><div class="criterion" title="Champ optionnel">
+                        <input type="number" class="dn-year" name="naissance-jour" value="1970">
+                        <label>Année</label>
+                    </div>
                 </div>
-
-                <div class="categ-options">
+                
+                <div class="options">
                     <text class="button hover-full blue" onclick='selectStep(1);'>Précédent</text>
-                    <input class="hover-full blue" type="submit" onclick='invalidProcedure(event);'>
+                    <input class="hover-full blue" type="submit">
                 </div>
-                <div class="categ-options small">
+                <div class="options small">
                     <text class="button hover-full blue" onclick='selectStep(1);'>&lt;</text>
-                    <input class="hover-full blue" type="submit" value="✔" onclick='invalidProcedure(event);'>
+                    <input class="hover-full blue" type="submit" value="✔">
                 </div>
             </div>
         </div>
@@ -111,54 +137,115 @@
 {% block script %}
 <script>
 
-    function selectStep(id) {
-        const progbar = document.getElementById("progbar");
-        const progbarStep = progbar.children[id];
-
-        if (progbarStep) {
-            selectUnique(progbarStep);
-        }
-
-        const stepTabs = document.getElementById("tabs");
-        const stepTab = stepTabs.children[id];
-
-        if (stepTab) {
-            selectUnique(stepTab);
-            setTabableUnique(stepTab);
-        }
+function selectStep(id) {
+    const progbar = document.getElementById("progbar");
+    const progbarStep = progbar.children[id];
+    
+    if (progbarStep) {
+        selectUnique(progbarStep);
     }
+    
+    const stepTabs = document.getElementById("tabs");
+    const stepTab = stepTabs.children[id];
+    
+    if (stepTab) {
+        selectUnique(stepTab);
+        setTabableUnique(stepTab);
+    }
+}
 
-    function invalidProcedure(event) {
-        event.preventDefault();
+// 
 
-        function removeNotice(event) {
-            removeClass(this, "notice");
-
-            this.removeEventListener(event.type, removeNotice);
-        }
-
-        const form = document.getElementById("form");
-
-        if (form.checkValidity()) {
-            form.submit();
-        } else {
-            selectStep(0);
-
-            const requiredInputs = form.querySelectorAll("[required]");
-
-            /**/
-
-            for (let i = 0; i < requiredInputs.length; ++i) {
-                const input = requiredInputs[i];
-
-                addClass(input, "notice");
-
-                input.addEventListener("focus", removeNotice);
+function whichStep(element) {
+    while(element != null) {
+        if(hasClass(element, "categ")) {
+            const siblings = element.parentElement.children;
+            
+            for(let i = 0; i < siblings.length; ++i) {
+                if(siblings[i] === element) {
+                    return i;
+                }
             }
+        }
+        
+        element = element.parentElement;
+    }
+    
+    return -1;
+}
 
-            /**/
+function invalidProcedure(event) {
+    event.preventDefault();
+    
+    const form = document.getElementById("form");
+    
+    if(form.checkValidity()) {
+        form.submit();
+    } else {
+        let minInvalidStep = Infinity;
+        const invalidInputs = form.querySelectorAll(".notice");
+        
+        for (let i = 0; i < invalidInputs.length; ++i) {
+            const input = invalidInputs[i];
+            const step = whichStep(input);
+            
+            if(step < minInvalidStep) {
+                minInvalidStep = step;
+            }
+        }
+        
+        selectStep(minInvalidStep);
+    }
+}
+
+// Script on form submit
+
+{
+    const forms = document.getElementsByTagName("form");
+    
+    for(let i = 0; i < forms.length; ++i) {
+        const form = forms[i];
+        
+        const submitters = form.querySelectorAll("[type='submit'], button:not([type='button']):not([type='reset'])");
+        
+        for(let j = 0; j < submitters.length; ++j) {
+            const submitter = submitters[j];
+            
+            submitter.addEventListener("click", invalidProcedure);
         }
     }
+}
+
+{
+    //// Invalid form inputs ////
+    
+    // Removes the invalid notice style from an input.
+    
+    function removeNotice(event) {
+        removeClass(this, "notice");
+        
+        this.removeEventListener(event.type, removeNotice);
+    }
+    
+    // Changes the style of an invalid input.
+    
+    function noticeField(element) {
+        addClass(element, "notice");
+        
+        element.addEventListener("focus", removeNotice);
+    }
+    
+    const inputs = document.querySelectorAll("form input");
+    
+    for(let i = 0; i < inputs.length; ++i) {
+        const input = inputs[i];
+        
+        input.addEventListener("invalid", function(event) {
+            noticeField(this);
+        });
+    }
+}
 
 </script>
+<script src="../js/datepickers.js"></script>
 {% endblock %}
