@@ -117,7 +117,7 @@
 
 /* width ratio on laptop or tv */
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1000px) {
 	.row .col.l1 {
 		width: 8.33333%;
 	}
