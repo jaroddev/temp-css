@@ -76,13 +76,12 @@ input[type="email"]:focus {
     max-height : 1em;
     
     user-select : none;
+    font-size: 0.8em;
 }
 
 .criterion > input {
     padding : 0.5em;
     width : 100%;
-    
-    font-size : 1.25em;
 }
 
 .criterion > input[required] + label:after {
