@@ -61,6 +61,9 @@ header, footer {
     display: flex;
     flex-direction: column;
     height: 16.5%;
+    
+    position: relative;
+    z-index: 10;
 }
 
 header {
@@ -113,7 +116,7 @@ main {
     /min-height: 67%;
     /background-color: red;
     min-height: calc(100% - 96px - 112px);
-    overflow: auto;
+    /overflow: auto;
 }
 
 /* footer and footer inner layout */

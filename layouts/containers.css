@@ -9,7 +9,7 @@
 .container0 {
     margin: auto;
     box-sizing: border-box;
-    padding: 32px;
+    padding: 32px 64px;
     width: 768px;
 }
 
@@ -24,10 +24,7 @@
     }
     
     .container0 {
+        padding: 32px;
         width: 100%;
-    }
-    
-    .shadow {
-        box-shadow: none !important;
     }
 }
