@@ -1,8 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block style %}
-<link rel="stylesheet" href="../style/charity.css">
 <link rel="stylesheet" href="../components/carousel.css">
+<link rel="stylesheet" href="../style/charity.css">
 {% endblock %}
 
 {% block title %}
@@ -15,10 +15,25 @@ Nos associations partenaires
     {# carousel container #}
     <div style="height: 334px;" class="col s12 m12 l6">
 
+        <div class="carousel">
+            <div class="carousel-item shadow">
+                <img src="../images/about_us/france.png" alt="">
+            </div>
 
+            <div class="carousel-item shadow">
+                <img src="../images/charity/sea_shepherd.JPG" alt="">
+            </div>
 
+            <div class="carousel-item shadow">
+                <img src="../images/about_us/lin.JPG" alt="">
+            </div>
 
-        
+            <div class="carousel-item shadow">
+                <img src="../images/charity/sea_shepherd.JPG" alt="">
+            </div>
+
+        </div>
+
 
     </div>
 
@@ -64,6 +79,14 @@ Nos associations partenaires
 {% block script %}
 <script src="../js/carousel.js"></script>
 <script>
-    
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {
+            duration: 200,
+            padding: 40,
+            shift: 100,
+            indicators: true
+        });
+    });
 </script>
 {% endblock %}
