@@ -1,0 +1,22 @@
+.description {
+    padding: 1em 1em;
+}
+
+.description>p+p {
+    margin-top: 1em;
+}
+
+a.button.blue {
+    height: 50px;
+}
+
+a.button.blue.visit {
+    position: absolute;
+    right: 2em;
+}
+
+@media only screen and (max-width: 1000px) {
+    a.button.blue {
+        width: 100%;
+    }
+}
