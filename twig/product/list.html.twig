@@ -15,44 +15,47 @@ Quel type de vetements ?
 {% block content %}
 <div class="row">
 
-    <div class="up-on-medium col s12 m12 l3 ">
+    <div class=" col s12 m12 l3 ">
 
         <h2 class="">{{ 'catégories' |upper}}</h2>
 
-        <div class="col s4 l8">
+        <div class="filter-container">
+
             {{ menu('unisexe', [
                 'téléton',
                 'octobre Rose',
                 'resto du coeur'
             ]) }}
-        </div>
 
-        {{ menu('collaborations', [
-            'T-shirt',
-            'Sweat',
-            'Pantalon'
-        ]) }}
 
-        {{ menu('taile', [
-            's',
-            'm',
-            'l',
-            'xL'
-        ]) }}
+            {{ menu('collaborations', [
+                'T-shirt',
+                'Sweat',
+                'Pantalon'
+            ]) }}
 
-        {{ menu('couleur', [
+            {{ menu('taile', [
+                's',
+                'm',
+                'l',
+                'xL'
+            ]) }}
+
+            {{ menu('couleur', [
             'noir',
             'blanc',
             'autre'
-        ]) }}
+            ]) }}
+
+        </div>
 
     </div>
 
     <div class="col s12 m12 l9 ">
         {% for product in product_array %}
-            <div class="col s12 m6 l3 ">
-                {{ card(product['product_name'], product['image_name'], product['price']) }}
-            </div>
+        <div class="col s12 m6 l3 ">
+            {{ card(product['product_name'], product['image_name'], product['price']) }}
+        </div>
         {% endfor %}
     </div>
 
