@@ -7,12 +7,14 @@
 
 ".shadow": gives the form a shadow.
 
+".narrow-fade": removes the shadow on a smaller screen.
+
     <link rel="stylesheet" href="form.css">
     
     
     
     <div class="centerer">
-        <form class="container0 shadow">
+        <form class="container0 shadow narrow-fade">
         
         </form>
     </div>

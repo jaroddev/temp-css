@@ -44,15 +44,19 @@ div.options {
     justify-content: space-between;
 }
 
-div.submit *, div.options * {
-    font-size: 24px;
+div.option-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.form-subtitle {
-    margin: 0 0 1em 0;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    padding-bottom: 0.5em;
+div.option-full > * {
+    width: 100%;
+}
+
+div.submit *, div.options *, div.option-full * {
+    font-size: 24px;
 }
 
 .form-category {
@@ -64,13 +68,4 @@ div.submit *, div.options * {
     display : flex;
     
     margin: 1em 0 2em 0;
-}
-
-.form-bigtitle {
-    margin-bottom: 1em;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    padding-bottom: 0.5em;
-    
-    text-align: center;
 }
