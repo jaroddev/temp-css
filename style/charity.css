@@ -3,7 +3,7 @@
     height: 350px;
     box-sizing: border-box !important;
     padding: 10px 20px !important;
-    background-color: #ffbd59;
+    background-color: rgba(128, 128, 128, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
