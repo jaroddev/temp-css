@@ -13,7 +13,7 @@ Nos associations partenaires
 <div class="row">
 
     {# carousel container #}
-    <div style="height: 334px;" class="col s12 m12 l6">
+    <div class="col s12 m12 l6">
 
         <div class="carousel">
             <div class="carousel-item shadow">
@@ -82,10 +82,14 @@ Nos associations partenaires
     document.addEventListener('DOMContentLoaded', function () {
         var elems = document.querySelectorAll('.carousel');
         var instances = M.Carousel.init(elems, {
-            duration: 200,
+            duration: 140,
             padding: 40,
             shift: 100,
-            indicators: true
+            indicators: true,
+            numVisible: 3,
+            onCycleTo: function(){
+
+            }
         });
     });
 </script>
