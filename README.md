@@ -9,17 +9,17 @@ This repository contains the front-end part of a bigger project named Unison
  - type the following command "composer install"
 
 ## How to create a twig page
-[See here to learn how we organized our twig files](https://github.com/sitedevente/temp-css/md-docs/PAGE.md)
+[See here to learn how we organized our twig files](https://github.com/sitedevente/temp-css/tree/master/md-docs/PAGE.md)
 
 ## Testing the front-end
-[How to render and test an existing twig file](https://github.com/sitedevente/temp-css/md-docs/TEST.md)
+[How to render and test an existing twig file](https://github.com/sitedevente/temp-css/tree/master/md-docs/TEST.md)
 
 ## Forms
 
-[Learn how to create a form](https://github.com/sitedevente/temp-css/md-docs/FORM.md)
+[Learn how to create a form](https://github.com/sitedevente/temp-css/tree/master/md-docs/FORM.md)
 
 ## CSS organisation
-[How to contribute by creating a css script](https://github.com/sitedevente/temp-css/md-docs/CSS.md)
+[How to contribute by creating a css script](https://github.com/sitedevente/temp-css/tree/master/md-docs/CSS.md)
 
 ## html-draft
 If you wish to first code in a safe way html then create a html-draft folder,
