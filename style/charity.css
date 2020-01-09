@@ -21,7 +21,11 @@
 }
 
 .description {
-    padding: 3em 1em 0 1em;
+    padding: 3em 1em 1em 1em;
+}
+
+.description-title {
+    text-align: center;
 }
 
 .description>p+p {
@@ -35,6 +39,14 @@ a.button.blue {
 a.button.blue.visit {
     position: absolute;
     right: 2em;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.marged {
+    margin-top: 64px;
 }
 
 @media only screen and (max-width: 1000px) {
