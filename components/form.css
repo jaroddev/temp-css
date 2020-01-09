@@ -55,7 +55,12 @@ div.option-full > * {
     width: 100%;
 }
 
-div.submit *, div.options *, div.option-full * {
+div.option-center {
+    display: flex;
+    justify-content: center;
+}
+
+div.submit *, div.options *, div.option-full *, div.option-center * {
     font-size: 24px;
 }
 
