@@ -1,6 +1,6 @@
 <?php
 
-$page_name = 'home.html.twig';
+$page_name = 'home/index.html.twig';
 
 $options = [];
 
