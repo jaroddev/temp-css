@@ -78,19 +78,5 @@ Nos associations partenaires
 
 {% block script %}
 <script src="../js/carousel.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.carousel');
-        var instances = M.Carousel.init(elems, {
-            duration: 140,
-            padding: 40,
-            shift: 100,
-            indicators: true,
-            numVisible: 3,
-            onCycleTo: function(){
-
-            }
-        });
-    });
-</script>
+<script src="../js/charity.js"></script>
 {% endblock %}
