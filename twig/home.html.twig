@@ -1,6 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block style %}
+<link rel="stylesheet" href="../components/form.css">
 <link rel="stylesheet" href="../style/home.css">
 {% endblock %}
 
@@ -47,15 +48,17 @@
                             Nous souhaitons vivre dans un monde plus propre et plus "humain", alors nous voulons proposer des vêtements qui respectent ces deux aspects en même temps.<br>
                             Voilà pourquoi le t-shirt UNISON vous permet de donner à votre association préférée sans avoir un impact négatif sur la planète !<br>
                         </p>
-                        <button class="btn btn-default full blue"
-                                type="button"
-                                role="button"
-                                onclick="location.href = ''">
-                                {#
-                                href="">
-                                #}
-                            En savoir plus
-                        </button>
+                        <div class="option-center">
+                            <button class="btn btn-default full blue"
+                                    type="button"
+                                    role="button"
+                                    onclick="location.href = ''">
+                                    {#
+                                    href="">
+                                    #}
+                                En savoir plus
+                            </button>
+                        </div>
                     </div>
                 {% endblock %}
             </div>
@@ -69,7 +72,7 @@
                     <a href="">
                         <img src="tshirt_noir.jpg" alt="Nouvelle collection">
                     </a>
-                    <br>
+                    
                     <button class="btn btn-default full blue"
                             type="button"
                             role="button"

@@ -157,6 +157,7 @@ body {
     justify-content: center;
     align-self: center;
     align-items: center;
+    padding: 0.5em 0;
     height:100%;
     margin-top: 1px;
     color: white;
@@ -164,6 +165,7 @@ body {
     font-family: GoodDog;
     border: 2px solid #d9d9d9;
     border-radius: 8px;
+    text-align: center;
 }
 .content {
     display: flex;
@@ -320,8 +322,12 @@ body {
     width: 75%;
 }
 
+div.option-center * {
+    font-size: 1em;
+}
+
 button {
-    border-radius: 16px;
+    border-radius: 1em;
     padding: 0.5em 3em;
 }
 
