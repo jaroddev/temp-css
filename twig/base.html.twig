@@ -12,27 +12,28 @@
         <link rel="stylesheet" href="../components/shadows.css">
         <link rel="stylesheet" href="../components/buttons.css">
         {% block style %}
-            
+
         {% endblock %}
         <title>
             {% block title %} test
             {% endblock %} - Unison
         </title>
-        
+
     </head>
 
     <body>
         {% include 'header.html.twig' %}
         <main>
             {% block content %}
-            
+
             {% endblock %}
         </main>
         {% include 'footer.html.twig' %}
         <script src="../js/common.js"></script>
         <script src="../js/error.js"> </script>
         {% block script %}
-        
+
         {% endblock %}
     </body>
+
 </html>
