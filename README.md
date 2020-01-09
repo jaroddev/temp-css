@@ -4,6 +4,20 @@ this repository contains Twig, CSS, HTML and JavaScript.
 ## Unison
 Only the Front-end part of the [Unison](https://github.com/yodoko/unison) project is saved here.
 
+## Expected scenario
+- home/index
+- about_us/index
+- product/index
+- product/view
+- cart/index (non authentified)
+- account/connection
+- account/add
+- cart/index (authentified)
+- account/index
+- account/edit_info
+- account/list_addresses
+- account/edit_address
+- charity/index
 
 ## How to install the dependencies
  - launch your terminal
