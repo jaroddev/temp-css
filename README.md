@@ -43,22 +43,26 @@ Only the Front-end part of the [Unison](https://github.com/yodoko/unison) projec
  - Write documentation for the tests
  - Write documentation for the twig pages
  - Increase responsiveness quality of the header and footer
- - Improve the filters design in the clothe/index.html.twig 
+ - Improve the filters design in the product/index.html.twig 
  
 ### @Adn
- - cart/index.html.twig layout and basic design
- - Improve form.css syntax to make it easier for contributors to create Unison-styled forms
- - Documentation explaining how to build forms
- - Create the homepage.html.twig page
-
+ - Non authentified cart/index
+ 
 ## TODO list
- - Increase responsiveness quality of the account/index, product/show, about_us/index, cart/index pages
+ - Add routing to front-end
+ - Make home/index work on IE and firefox
+ - Make charity/index work on IE and firefox
+ - Make account/index work on IE and firefox
+ - Error.js on firefox
+ - Increase responsiveness quality of about_us/index
  - Donations and purchases summary
  - Add page description
  - Increase web search prominence
  - Make text responsive
 
 ## DONE tasks list
+ - Create the home page
+ - Increase responsiveness quality of the account/index, product/show, about_us/index, cart/index pages
  - Create the about_us.html.twig page
  - Add responsiveness to the other pages (Account/*.html.twig)
  - Responsiveness of the clothe/index.html.twig page
